@@ -1,7 +1,7 @@
 import React from "react";
 import './App.css';
 import  { BrowserRouter as Router ,Routes ,Route  } from "react-router-dom";
-
+import Homepage from "./Homepage";
 function App() {
   return (
     <Router>
@@ -9,7 +9,7 @@ function App() {
       
          <Route path = "/checkout" element = {<Checkout />}> </Route>
          <Route path = "/login"    element = {<Login/>}>  </Route>
-         <Route path = ""          element = {<Homepage/>}> </Route>
+         <Route path = ""          element = {<Mainhomepage/>}> </Route>
       </Routes>
     </Router>
   );
@@ -17,14 +17,16 @@ function App() {
 
 function Checkout()
 {
-  return<h1> This is the Checkout  Page.... </h1>
+  return <Checkout />
 }
 function Login()
 {
   return<h1> This is the Login Page.... </h1>
 }
-function Homepage()
+function Mainhomepage()
 {
-  return<h1> This is the Main  Home Page.... </h1>
+  return (
+    <Homepage /> 
+  ) 
 }
 export default App;

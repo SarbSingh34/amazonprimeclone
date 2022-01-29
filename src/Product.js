@@ -16,7 +16,7 @@ const Product = () =>
                                        <img src = "/images/lean startup img1.jpg" style = {{width:'51%'}} />
                                     </div>
                                     <div className="button_div" style = {{textAlign:'center'}}>
-                                      <button onClick={addtobasket}> Add to Basket  </button>
+                                      <button> Add to Basket  </button>
                                     </div>
                         </div>
 

@@ -2,7 +2,7 @@
 // /Data Logic is here.....
 export const initialState = {
 
-     basket:[],
+     basket:["bREAD"],
 };
 
 function reducer(state,action)

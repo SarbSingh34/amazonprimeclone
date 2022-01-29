@@ -7,6 +7,7 @@ import { useStateValue } from  "./StateProvider";
 const Navbar = () => 
 {
 
+//  const [state,dispatch] = useStateValue();    syntax 
  const [{basket}] = useStateValue();
 
   return (

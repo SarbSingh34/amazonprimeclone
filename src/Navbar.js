@@ -2,10 +2,13 @@ import React from 'react';
 import SearchIcon from "@material-ui/icons/Search";
 import { Link } from "react-router-dom";
 import  ShoppingBasketIcon  from '@material-ui/icons/ShoppingBasket';
-
+import { useStateValue } from  "./StateProvider";
 
 const Navbar = () => 
 {
+
+ const [{basket}] = useStateValue();
+
   return (
     <div className="main_nav" style={{ display: "flex", backgroundColor: "black", height: "9vh",width:'100%' }}
     >
@@ -77,7 +80,7 @@ const Navbar = () =>
                 style={{ display: "flex", flexDirection: "row", color: "white",padding:'32%' }}
             >
                 <span> <ShoppingBasketIcon /></span>
-                <span className = "secondline"> 0 </span>
+                <span className = "secondline">{basket.length} </span>
             </div>
             </Link>
       </div>

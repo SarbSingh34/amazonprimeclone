@@ -10,8 +10,8 @@ const Product = () =>
                                     <p>The Lean Startup: How Constant Innovation 
                                         Creates Radically Successful 
                                     </p>
-                                    <p> 11.96 </p>
-                                    <p> 5 </p>
+                                    <p> {11.96} </p>
+                                    <p> {5} </p>
                                     <div className="img" style = {{textAlign:'center'}}>
                                        <img src = "/images/lean startup img1.jpg" style = {{width:'51%'}} />
                                     </div>

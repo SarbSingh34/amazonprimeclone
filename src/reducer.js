@@ -2,18 +2,25 @@
 // /Data Logic is here.....
 export const initialState = {
 
-     basket:["bREAD","JASII"],
+     basket:[],
+     user:null,
 };
 
 function reducer(state,action)
 {
+     console.log(action);
   switch(action.type)
   {
-      case "Add to Cart": 
-      break;
-
-      case "Remove from  Cart": 
-      break;
+      case "ADD_TO_CART": 
+      return {
+          ...state,
+          basket: [...state.basket,action.item],
+        }
+       
+      case "Remove_from _Cart": 
+      return {state}
+      default:
+        return state;
   }
 
 }

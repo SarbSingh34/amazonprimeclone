@@ -1,7 +1,24 @@
 import React from 'react';
+import { useStateValue } from './StateProvider';
 
 const Product = ({id,title,image,price,rating}) =>
  {
+    const[{ } ,dispatch] = useStateValue();
+    const addtocart = () =>
+    {
+      dispatch(
+        {
+           type : "ADD_TO_CART",
+           item :{
+               id:id,
+               title:title,
+               image: image,
+               price:price,
+               rating:rating, 
+           }
+        })
+    }
+  
   return (
   <>
       <div className="product">
@@ -16,7 +33,7 @@ const Product = ({id,title,image,price,rating}) =>
                <img src = {image} style = {{width:'60%'}} />
             </div>
             <div className="buuton_product"style = {{textAlign:'center'}}>
-              <button> Add to Cart</button>
+              <button onClick={addtocart}> Add to Cart</button>
             </div>
            
       </div>

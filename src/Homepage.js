@@ -11,15 +11,7 @@ const Homepage = () =>
      <Carouselpart />
    
       <div className = "main_container" style = {{display:'flex',flexWrap:'wrap',justifyContent:'space-evenly'}}>
-          <Product />
-          <Product />
-          <Product />
-          <Product />
-          <Product />
-          <Product />
-          <Product />
-          <Product />
- 
+            <Product />
       </div>
 
     </>

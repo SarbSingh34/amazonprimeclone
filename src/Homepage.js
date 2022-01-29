@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from './Navbar';
 import Carouselpart from './Carouselpart';
-import Product from "./Product";
+import Home from './Home';
 
 const Homepage = () => 
 {
@@ -11,7 +11,7 @@ const Homepage = () =>
      <Carouselpart />
    
       <div className = "main_container" style = {{display:'flex',flexWrap:'wrap',justifyContent:'space-evenly'}}>
-            <Product />
+           <Home />
       </div>
 
     </>

@@ -1,40 +1,14 @@
 import React from 'react';
 import Navbar from './Navbar';
+import Carouselpart from './Carouselpart';
 
 const Homepage = () => 
 {
   return(
     <>
      <Navbar />
-      <h1> Homepage </h1>
-      <h1> Homepage </h1>
+     <Carouselpart />
 
-      <h1> Homepage </h1>
-      <h1> Homepage </h1>
-      <h1> Homepage </h1>
-
-      <h1> Homepage </h1>
-      <h1> Homepage </h1>
-      <h1> Homepage </h1>
-   
-      <h1> Homepage </h1>
-      <h1> Homepage </h1>
-      <h1> Homepage </h1>
-
-      <h1> Homepage </h1>
-      <h1> Homepage </h1>
-      <h1> Homepage </h1>
-      <h1> Homepage </h1>
-      <h1> Homepage </h1>
-
-      <h1> Homepage </h1>
-      <h1> Homepage </h1>
-      <h1> Homepage </h1>
-      <h1> Homepage </h1>
-      <h1> Homepage </h1>
-      <h1> Homepage </h1>
-      <h1> Homepage </h1>
-      
     </>
   )
 };

@@ -7,7 +7,7 @@ import  ShoppingBasketIcon  from '@material-ui/icons/ShoppingBasket';
 const Navbar = () => 
 {
   return (
-    <div className="main_nav" style={{ display: "flex", backgroundColor: "black", height: "9vh",position:'fixed',top:'0',width:'100%' }}
+    <div className="main_nav" style={{ display: "flex", backgroundColor: "black", height: "9vh",width:'100%' }}
     >
       <div className="first_logo" style={{ width: "11%" }}>
         <img

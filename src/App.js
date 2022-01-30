@@ -4,6 +4,7 @@ import  { BrowserRouter as Router ,Routes ,Route  } from "react-router-dom";
 import Homepage from "./Homepage";
 import  Checkout  from "./Checkout";
 import Navbar from "./Navbar";
+import Loginpg from  "./Loginpg";
 
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
       <Routes> 
       
          <Route path = "/checkout" element = {<Checkoutpage />}> </Route>
-         <Route path = "/login"    element = {<Login/>}>  </Route>
+         <Route path = "/login"    element = {<Loginpage/>}>  </Route>
          <Route path = ""          element = {<Mainhomepage/>}> </Route>
       </Routes>
     </Router>
@@ -29,9 +30,14 @@ function Checkoutpage()
     
   )
 }
-function Login()
+function Loginpage()
 {
-  return<h1> This is the Login Page.... </h1>
+  return(
+    <>
+    <Navbar />
+    <Loginpg />
+    </>
+  )
 }
 function Mainhomepage()
 {

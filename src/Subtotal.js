@@ -15,7 +15,9 @@ const Subtotal = () =>
           renderText={(value) =>
         (
             <>
-                Subtotal ({basket.length} items) : <strong>{`  ${value} `}</strong>
+            <p>
+                 Subtotal ({basket.length} items) :{`${value}`}
+            </p>
             </>
         )}
             decimalScale = {2}

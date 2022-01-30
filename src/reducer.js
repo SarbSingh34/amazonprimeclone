@@ -2,7 +2,7 @@
 // /Data Logic is here.....
 export const initialState = {
 
-     basket:[
+  basket:[
        {  id:"12121212",
           title: "New iPad.........",
           price:  598.66,
@@ -19,9 +19,7 @@ export const initialState = {
 };
 
 export const getbasketotal = (basket) =>
-{
- basket?.reduce((amount,item) => item.price + amount ,0);
-}
+ basket?.reduce((amount,item) => item.price + amount , 0);
 
 function reducer(state,action)
 {

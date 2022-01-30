@@ -3,6 +3,7 @@ import SearchIcon from "@material-ui/icons/Search";
 import { Link } from "react-router-dom";
 import  ShoppingBasketIcon  from '@material-ui/icons/ShoppingBasket';
 import { useStateValue } from  "./StateProvider";
+import Checkout from "./Checkout";
 
 const Navbar = () => 
 {
@@ -76,7 +77,7 @@ const Navbar = () =>
             </div>
             </Link>
 
-            <Link to="/">
+            <Link to="/Checkout">
             <div
                 className="header_option"
                 style={{ display: "flex", flexDirection: "row", color: "white",padding:'32%' }}

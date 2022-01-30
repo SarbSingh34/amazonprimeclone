@@ -2,7 +2,13 @@
 // /Data Logic is here.....
 export const initialState = {
 
-     basket:[],
+     basket:[
+       {  id:"12121212",
+          title: "New iPad.........",
+          price:  598.66,
+          rating:4,
+          image: "/images/SHOES IMG 1.jpg"
+       }],
      user:null,
 };
 

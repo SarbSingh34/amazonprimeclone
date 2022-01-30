@@ -1,8 +1,13 @@
 import React , { useState } from 'react';
-import { auth } from './Firebase';
+import { auth   } from './Firebase';
+import { Navigate, useNavigate } from "react-router-dom";
+
+//  useNavigate is used at place of usehistory 
 
 const Loginpg = () => 
 {
+    // helps us to change URL 
+    const history = useNavigate(); 
   const [email,setemail]  =    useState('');
   const [pass,setpass]    =    useState('');
 
@@ -20,6 +25,11 @@ const Loginpg = () =>
      .then((auth) =>
      {
        console.log(auth);
+       if(auth)
+       {
+        //    history.push('/')
+              Navigate('/path')
+       }
      })
      .catch(error =>alert(error.message))
   }

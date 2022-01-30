@@ -1,10 +1,10 @@
 import React , { useState } from 'react';
-import { auth } from 'Firebase';
+import { auth } from './Firebase';
 
 const Loginpg = () => 
 {
- const [email,setemail] =     useState('');
-  const [pass,setpass]   =    useState('');
+  const [email,setemail]  =    useState('');
+  const [pass,setpass]    =    useState('');
 
   function singin(e)
   {

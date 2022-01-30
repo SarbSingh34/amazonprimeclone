@@ -1,10 +1,12 @@
 import { SportsBasketball } from '@material-ui/icons';
 import React from 'react';
 import CurrencyFormat from "react-currency-format";
-
+import { useStateValue } from "./StateProvider";
+import { getbasketotal } from './reducer';
 
 const Subtotal = () => 
 {
+    const [{basket},dispatch] = useStateValue();
   return (
       <>
       <div className="subtotal">
@@ -12,11 +14,11 @@ const Subtotal = () =>
           renderText={(value) =>
         (
             <>
-            Subtotal ({basket.length} items ) : <strong>  </strong>
+                Subtotal ({basket.length} items) : <strong>{`  ${value} `}</strong>
             </>
         )}
             decimalScale = {2}
-            VALUE = {}
+            value = {getbasketotal(basket)}
             displayType = {"text"}
             thousandSeparator = {true}
             prefix = {"$"}/>

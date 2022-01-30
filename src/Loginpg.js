@@ -7,14 +7,13 @@ import { Navigate, useNavigate } from "react-router-dom";
 const Loginpg = () => 
 {
     // helps us to change URL 
-    const history = useNavigate(); 
+    const Navigate = useNavigate(); 
   const [email,setemail]  =    useState('');
   const [pass,setpass]    =    useState('');
 
   function singin(e)
   {
      e.preventDefault();
-
      auth.signInWithEmailAndPassword(email,pass)
      .then(auth =>
       {

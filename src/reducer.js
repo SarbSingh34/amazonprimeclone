@@ -8,7 +8,13 @@ export const initialState = {
           price:  598.66,
           rating:4,
           image: "/images/SHOES IMG 1.jpg"
-       }],
+       },
+       {  id:"44444444",
+       title: "Old iPad.........",
+       price: 499.00,
+       rating:1,
+       image: "/images/canonimg 1.jpg"
+    }],
      user:null,
 };
 

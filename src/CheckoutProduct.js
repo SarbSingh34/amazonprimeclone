@@ -27,7 +27,7 @@ const CheckoutProduct = ({id,title,image,price,rating}) =>
                             <strong> {price} </strong>
                         </p>
                         <p className = "rating">
-                            <h1> {rating} </h1>
+                            <strong> {rating} </strong>
                         </p>
                         <button onClick={removefrombasket}>
                             Remove from Basket 

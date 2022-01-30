@@ -11,7 +11,7 @@ const Navbar = () =>
 //  const [state,dispatch] = useStateValue();    syntax 
  const [{basket}] = useStateValue();
 
- console.log(basket);
+//  console.log(basket);
   return (
     <div className="main_nav" style={{ display: "flex", backgroundColor: "black", height: "9vh",width:'100%' }}
     >

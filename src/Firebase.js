@@ -3,15 +3,15 @@
  import 'firebase/compat/auth';
  import 'firebase/compat/firestore';
 
-const firebaseConfig = {
-    apiKey: "AIzaSyBYHwjlPloU9brDx5BUzRYOnbmzg9iw2is",
-    authDomain: "primeclone-475e8.firebaseapp.com",
-    projectId: "primeclone-475e8",
-    storageBucket: "primeclone-475e8.appspot.com",
-    messagingSenderId: "1042124094417",
-    appId: "1:1042124094417:web:c5b6143c46b83f160d7ef0",
-    measurementId: "G-SSEWEX2DVN"
-  };
+ const firebaseConfig = {
+  apiKey: "AIzaSyDsW1ouzlgqby0APBGverFWu8BTv8zBhr8",
+  authDomain: "primeproejct.firebaseapp.com",
+  projectId: "primeproejct",
+  storageBucket: "primeproejct.appspot.com",
+  messagingSenderId: "422707140795",
+  appId: "1:422707140795:web:35e9c82fd6b3ad9150f19e",
+  measurementId: "G-WNHKY2BFMT"
+};
 
 //  Use this to initialize the firebase App 
 

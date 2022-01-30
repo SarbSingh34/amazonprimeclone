@@ -14,6 +14,13 @@ const Loginpg = () =>
   function singin(e)
   {
      e.preventDefault();
+
+     auth.signInWithEmailAndPassword(email,pass)
+     .then(auth =>
+      {
+         Navigate('/')
+      })  
+      .catch(error =>alert(error.message))
   }
 
 //   ---
@@ -25,10 +32,10 @@ const Loginpg = () =>
      .then((auth) =>
      {
        console.log(auth);
-       if(auth)
+       if(auth)            // authenticaion is not empty 
        {
         //    history.push('/')
-              Navigate('/path')
+              Navigate('/')
        }
      })
      .catch(error =>alert(error.message))

@@ -13,8 +13,7 @@ const Home = () =>
                             title = "Leolqefqefqwfqwfwq"
                             price = {11.96}
                             rating = {5}
-                            image = "/images/lean startup img1.jpg"               
-
+                            image = "/images/lean startup img1.jpg"     
                         />
                         }
                     </div>

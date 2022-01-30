@@ -30,7 +30,24 @@ function reducer(state,action)
         }
        
       case "REMOVE_FROM_CART": 
-      return {state}
+
+      // we cloned the basket
+      let newbasket = [...state.basket];
+
+      const index = state.basket.findIndex((basketItem) =>
+      basketItem.id === action.id);
+
+       if(index>=0)
+       {
+         // item exists in market remove it 
+          newbasket.splice(index,1);
+       }
+       else
+       {
+          console.log("can't remove this id")
+       }
+      return {
+        ...state, basket : newbasket};
       default:
         return state;
   }

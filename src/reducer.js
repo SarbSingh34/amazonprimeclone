@@ -23,7 +23,7 @@ function reducer(state,action)
           basket: [...state.basket,action.item],
         }
        
-      case "Remove_from _Cart": 
+      case "REMOVE_FROM_CART": 
       return {state}
       default:
         return state;

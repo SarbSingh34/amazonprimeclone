@@ -3,7 +3,7 @@ import { useStateValue } from './StateProvider';
 import CheckoutProduct from "./CheckoutProduct";
 const Checkout = () => 
 {
-    const [{basket},dispatch] = useStateValue();
+    const [{basket}] = useStateValue();
   return (
     <>
         <h1> This is checkout PG  </h1>
@@ -17,18 +17,18 @@ const Checkout = () =>
 
                  {/* List of all checkout products-- */}
 
-                { basket.map(item =>
+            { basket.map(item =>
                 { 
-                     <CheckoutProduct 
-                      id = {item.id}
-                      title = {item.title}
-                      image= {item.image}
-                      price = {item.price}
-                      rating = {item.rating}
-                     />
-                })
-
-                } 
+                    return (
+                        <CheckoutProduct 
+                        id = {item.id}
+                        title = {item.title}
+                        image= {item.image}
+                        price = {item.price}
+                        rating = {item.rating}
+                       />
+                    )  })
+            } 
             </div>
 
         )}

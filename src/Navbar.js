@@ -4,14 +4,24 @@ import { Link } from "react-router-dom";
 import  ShoppingBasketIcon  from '@material-ui/icons/ShoppingBasket';
 import { useStateValue } from  "./StateProvider";
 import Checkout from "./Checkout";
-
+import reducer from './reducer';
+import { auth } from './Firebase';
 const Navbar = () => 
 {
 
 //  const [state,dispatch] = useStateValue();    syntax 
- const [{basket}] = useStateValue();
+ const [{basket,user }] = useStateValue();
+
+  const handleAuthentication = () =>
+  { 
+     if(user)
+     {
+       auth.signOut();
+     }
+  }
 
  console.log(basket);
+
   return (
     <div className="main_nav" style={{ display: "flex", backgroundColor: "black", height: "9vh",width:'100%' }}
     >
@@ -47,13 +57,13 @@ const Navbar = () =>
             display: "flex",
             justifyContent: "space-evenly",
             }}>
-            <Link to="/Login">
+            <Link to = {!user  && '/Login'}>
             <div
-                className="header_option"
+                className="header_option" onClick={handleAuthentication}
                 style={{ display: "flex", flexDirection: "column", color: "white" }}
             >
                 <span className = "firstline"> Hello </span>
-                <span className = "secondline"> Sign in </span>
+                <span className = "secondline"> {user ? 'Sign Out' : 'Sign In'}</span>
             </div>
             </Link>
 

@@ -12,35 +12,32 @@ function App()
 {
     const [{},dispatch] = useStateValue();
 
-  // will run for 1 time..
-  // this is used yo make state presistent that even tab closes user willbe oin the same state
-  // if he is in Login state stay  there 
-  //  if Logout stay Logged out 
+      // will run for 1 time..
+      // this is used yo make state presistent that even tab closes user willbe oin the same state
+      // if he is in Login state stay  there 
+      //  if Logout stay Logged out 
      useEffect(() =>
      {
-         auth.onAuthStateChanged(authUser =>
-          {
-            console.log("The user is  ->>>" , authUser);
-          })
-        if(authUser)
-        {
-         // user is Loggedin ..    
-         dispatch({
-           type : 'SET_USER',
-           user: authUser
-         })
-      }
-      else
-      {
-         dispatch({
-           type : 'SET_USER',
-           user:null
-         })
-         // user is Logged out 
-      }
-
-
-     },[])
+            auth.onAuthStateChanged(authUser =>
+            {
+              console.log("The user is  ->>>" , authUser);
+                  if(authUser)                                                                                                                                                                                                                                
+                      {
+                    // user is Loggedin ..    
+                    dispatch({
+                        type : 'SET_USER',
+                        user: authUser
+                          })
+                    }
+                   else 
+                   {
+                    // user is Logged out 
+                      dispatch({
+                        type : 'SET_USER',
+                        user:null
+                      })
+                   }
+              },[])
   return (
     <Router>
       <Routes> 
@@ -51,7 +48,7 @@ function App()
       </Routes>
     </Router>
   );
-}
+
 
 function Checkoutpage()
 {
@@ -79,4 +76,5 @@ function Mainhomepage()
   
   ) 
 }
+     }
 export default App;

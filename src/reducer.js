@@ -2,7 +2,7 @@
 // /Data Logic is here.....
 export const initialState = {
 
-  basket:[],
+   basket:[],
      user:null,
 };
 
@@ -39,6 +39,14 @@ function reducer(state,action)
        }
       return {
         ...state, basket : newbasket};
+
+        case "SET_USER":
+          
+        return {
+          ...state ,
+          user:action.user
+        }
+        
       default:
         return state;
   }

@@ -47,7 +47,7 @@ const Navbar = () =>
             display: "flex",
             justifyContent: "space-evenly",
             }}>
-            <Link to="/">
+            <Link to="/Login">
             <div
                 className="header_option"
                 style={{ display: "flex", flexDirection: "column", color: "white" }}

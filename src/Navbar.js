@@ -23,7 +23,7 @@ const Navbar = () =>
  console.log(basket);
 
   return (
-    <div className="main_nav" style={{ display: "flex", backgroundColor: "black", height: "9vh",width:'100%' }}
+    <div className="main_nav" style={{ display: "flex", backgroundColor: "black", height: "9vh",width:'100%',position:'fixed' }}
     >
       <div className="first_logo" style={{ width: "11%" }}>
         <img
@@ -45,60 +45,64 @@ const Navbar = () =>
                 <div className="search_icon2">
                     <SearchIcon
                     className="search_icon3"
-                    style={{ backgroundColor: "aquamarine", padding: "4px" }}/>
+                    style={{ backgroundColor: "#dfdfdf", padding: "4px" }}/>
                 </div>
         </div>
       </div>
 
-        <div
-            className="side_content"
-            style={{
-            width: "20%",
-            display: "flex",
-            justifyContent: "space-evenly",
-            }}>
-            <Link to = {!user  && '/Login'}>
-            <div
-                className="header_option" onClick={handleAuthentication}
-                style={{ display: "flex", flexDirection: "column", color: "white" }}
-            >
-                <span className = "firstline"> Hello </span>
-                <span className = "secondline"> {user ? 'Sign Out' : 'Sign In'}</span>
-            </div>
-            </Link>
-
-            <Link to="/">
-            <div
-                className="header_option"
-                style={{ display: "flex", flexDirection: "column", color: "white" }}
-            >
-                <span className = "firstline" style = {{fontSize:'12px'}}> Returns </span>
-                <span className = "secondline" style = {{fontSize:'19px',fontWeight:'500'}}> & Orders </span>
-            </div>
-            </Link>
-
-            <Link to="/">
-            <div
-                className="header_option"
-                style={{ display: "flex", flexDirection: "column", color: "white" }}
-            >
-                <span className = "firstline"> Your </span>
-                <span className = "secondline"> Prime </span>
-            </div>
-            </Link>
-
-            <Link to="/Checkout">
-            <div
-                className="header_option"
-                style={{ display: "flex", flexDirection: "row", color: "white",padding:'32%' }}
-            >
-                <span> <ShoppingBasketIcon /></span>
-                <span className = "secondline">{basket.length} </span>
-            </div>
-            </Link>
-      </div>
+        
     </div>
   );
 };
 
 export default Navbar;
+
+
+
+// <div className="side_content"
+//             style={{
+//             width: "20%",
+//             display: "flex",
+//             justifyContent: "space-evenly",
+//             }}>
+              
+//                 <Link to = {!user  && '/Login'} style = {{textDecoration:'none'}} >
+//                 <div
+//                     className="header_option" onClick={handleAuthentication}
+//                     style={{ display: "flex", flexDirection: "column", color: "white" }}
+//                 >
+//                     <span className = "firstline"   > Hello </span>
+//                     <span className = "secondline" > {user ? 'Sign Out' : 'Sign In'}</span>
+//                 </div>
+//                 </Link>
+
+//                   <Link to="/" style = {{textDecoration:'none'}}>
+//                   <div
+//                       className="header_option"
+//                       style={{  flexDirection: "column", color: "white" }}
+//                   >
+//                       <span className = "firstline" style = {{fontSize:'12px'}}> Returns </span>
+//                       <span className = "secondline" style = {{fontSize:'19px',fontWeight:'500'}}> & Orders </span>
+//                   </div>
+//                   </Link>
+
+//                   <Link to="/" style = {{textDecoration:'none'}}>
+//                   <div
+//                       className="header_option"
+//                       style={{ display: "flex", flexDirection: "column", color: "white" }}
+//                   >
+//                       <span className = "firstline"> Your </span>
+//                       <span className = "secondline"> Prime </span>
+//                   </div>
+//                   </Link>
+
+//                   <Link to="/Checkout" style = {{textDecoration:'none'}}>
+//                   <div
+//                       className="header_option"
+//                       style={{ display: "flex", flexDirection: "row", color: "white",padding:'32%' }}
+//                   >
+//                       <span> <ShoppingBasketIcon /></span>
+//                       <span className = "secondline">{basket.length} </span>
+//                   </div>
+//                   </Link>
+//       </div>

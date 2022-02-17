@@ -22,23 +22,40 @@ const Product = ({id,title,image,price,rating}) =>
   return (
   <>
       <div className="product">
-          <p>{title}</p>
-            <p className = "product_">
-              <small>$</small>
-              <strong>{price}</strong>
-              <br></br>
-              <strong>{rating}</strong>
-            </p>
-            <div className="img_product"style = {{textAlign:'center'}}>
-               <img src = {image} style = {{width:'60%'}} />
-            </div>
-            <div className="buuton_product"style = {{textAlign:'center'}}>
-              <button onClick={addtocart}> Add to Cart</button>
-            </div>
-           
+                 <div className="product-cover">
+                      <div className="main-text">
+                         <p> {title} </p>
+                      </div>
+                      <div className="price">
+                      <strong> {price} </strong>
+                      </div>
+                      <div className="rating">
+                             <strong> {rating} </strong>
+                      </div>
+                      <div className="image">
+                         <img src = {image} style = {{width:'25%'}} />
+                      </div>
+                      <div className="cart-btn">
+                          <button onClick={addtocart}> Add to Cart </button>
+                      </div>
+                 </div> 
       </div>
   </>
   )
 };
 
 export default Product;
+
+{/* <p>{title}</p>
+<p className = "product_">
+  <small>$</small>
+  <strong>{price}</strong>
+  <br></br>
+  <strong>{rating}</strong>
+</p>
+<div className="img_product"style = {{textAlign:'center'}}>
+   <img src = {image} style = {{width:'60%'}} />
+</div>
+<div className="buuton_product"style = {{textAlign:'center'}}>
+  <button onClick={addtocart}> Add to Cart</button>
+</div> */}

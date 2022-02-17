@@ -1,6 +1,7 @@
 import React , { useState } from 'react';
 import { auth   } from './Firebase';
 import { Navigate, useNavigate } from "react-router-dom";
+import './Login.css';
 
 //  useNavigate is used at place of usehistory 
 
@@ -41,33 +42,59 @@ const Loginpg = () =>
   }
   return (
       <>
-         <div className="login_container" style = {{textAlign:'center',paddingTop:'2%'}} >
-              <div className="cover-content">
-  
-                      <div className="main_content" style = {{backgroundColor:'brown',padding:'3% 2%',margin:'1% 33%',width:'25%'}}> 
-                           <div className="cover" style = {{padding:'8% 5%'}}>
-                           <h1> Sign in  </h1>
-                          <div className="main">
-                                <span style = {{paddingRight:'7%'}}> Email: </span>
-                                <input type = "text"    value = {email}  onChange = { e => setemail(e.target.value) }   />
-                          </div>
-                          <div className="main">
-                                <span> Password: </span>
-                                <input type = "password" value = {pass}  onChange = { e => setpass(e.target.value) }  />
-                          </div>
-                           <button type = "submit" onClick={singin}>SignIn</button>
-                          <p> By continuing, you agree to Amazon's Conditions of Use and Privacy Notice. </p>
+            <div className="login-container">
+            <div className="main_content" style = {{backgroundColor:'rgb(142, 137, 137)',padding:'1% 1% 3% 2%',margin:'1% 32%',width:'22%'}}> 
+                           <div className="cover" style = {{padding:'1% 4% 14% 4%'}}>
+                              <span style = {{fontSize:'xx-large',fontWeight:'500'}}> Sign in  </span>
+                              <div className="main">
+                                    <span style = {{paddingRight:'7%',fontWeight:'700'}}> Email: </span>
+                                    <br></br>
+                                    <input type = "text"    value = {email}  onChange = { e => setemail(e.target.value) }   />
+                              </div>
+                              <div className="main">
+                                    <span style = {{fontWeight:'700'}}> Password: </span>
+                                    <br></br>
+                                    <input type = "password" value = {pass}  onChange = { e => setpass(e.target.value) }  />
+                              </div>
+                              <div className="btn-cover">
+                                  <button type = "submit" onClick={singin} style = {{padding:'1% 6%'}}>SignIn</button>
+                              </div>
+                               <p> By continuing, you agree to Amazon's Conditions of Use and Privacy Notice. </p>
 
-                          <button type = "submit" onClick={register}> Create your Amazon Account </button>
+                               <div className="btn-cover">
+                                   <button id = "btn-1" type = "submit" onClick={register} > Create your Amazon Account </button>
+                               </div>
                            </div>
-                      
                     </div>
-
-              </div>
-
-        </div>
+            </div>
       </>
   )
 };
 
 export default Loginpg;
+
+
+{/* <div className="login_container" style = {{textAlign:'center',paddingTop:'2%'}} >
+              <div className="cover-content">
+  
+                      <div className="main_content" style = {{backgroundColor:'#8e8989',padding:'3% 2%',margin:'1% 33%',width:'25%'}}> 
+                           <div className="cover" style = {{padding:'8% 5%'}}>
+                              <span style = {{fontSize:'xx-large',fontWeight:'500'}}> Sign in  </span>
+                              <div className="main">
+                                    <span style = {{paddingRight:'7%'}}> Email: </span>
+                                    <input type = "text"    value = {email}  onChange = { e => setemail(e.target.value) }   />
+                              </div>
+                              <div className="main">
+                                    <span> Password: </span>
+                                    <input type = "password" value = {pass}  onChange = { e => setpass(e.target.value) }  />
+                              </div>
+                               <button type = "submit" onClick={singin}>SignIn</button>
+                               <p> By continuing, you agree to Amazon's Conditions of Use and Privacy Notice. </p>
+
+                                 <button type = "submit" onClick={register}> Create your Amazon Account </button>
+                           </div>
+                    </div>
+
+              </div>
+
+        </div> */}

@@ -42,26 +42,26 @@ const Loginpg = () =>
   }
   return (
       <>
-            <div className="login-container">
-            <div className="main_content" style = {{backgroundColor:'rgb(142, 137, 137)',padding:'1% 1% 3% 2%',margin:'1% 32%',width:'22%'}}> 
+            <div className="login-container" style = {{paddingTop:'4%'}}>
+            <div className="main_content" style = {{backgroundColor:'rgb(142, 137, 137)',padding:'1% 1% 3% 2%',margin:'1% 32%',width:'22%',boxShadow:'1px 1px 7px 1px #433F3c'}}> 
                            <div className="cover" style = {{padding:'1% 4% 14% 4%'}}>
                               <span style = {{fontSize:'xx-large',fontWeight:'500'}}> Sign in  </span>
                               <div className="main">
                                     <span style = {{paddingRight:'7%',fontWeight:'700'}}> Email: </span>
                                     <br></br>
-                                    <input type = "text"    value = {email}  onChange = { e => setemail(e.target.value) }   />
+                                    <input type = "text"    value = {email}  onChange = { e => setemail(e.target.value) } style = {{width:'73%',padding:'1%'}}   />
                               </div>
                               <div className="main">
                                     <span style = {{fontWeight:'700'}}> Password: </span>
                                     <br></br>
-                                    <input type = "password" value = {pass}  onChange = { e => setpass(e.target.value) }  />
+                                    <input type = "password" value = {pass}  onChange = { e => setpass(e.target.value) }  style = {{width:'73%',padding:'1%'}} />
                               </div>
-                              <div className="btn-cover">
-                                  <button type = "submit" onClick={singin} style = {{padding:'1% 6%'}}>SignIn</button>
+                              <div className="btn-cover" style = {{textAlign:'center',marginTop:'8%'}}>
+                                  <button id = "btn-2" type = "submit" onClick={singin} >SignIn</button>
                               </div>
-                               <p> By continuing, you agree to Amazon's Conditions of Use and Privacy Notice. </p>
+                               <p style = {{fontSize:'small'}}> By continuing, you agree to Amazon's Conditions of Use and Privacy Notice. </p>
 
-                               <div className="btn-cover">
+                               <div className="btn-cover" style = {{textAlign:'center'}}>
                                    <button id = "btn-1" type = "submit" onClick={register} > Create your Amazon Account </button>
                                </div>
                            </div>

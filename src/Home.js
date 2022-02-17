@@ -10,7 +10,7 @@ const Home = () =>
                         {
                         <Product 
                             id= "1111111"
-                            title = "Leolqefqefqwfqwfwq"
+                            title = "The Lean Startup: How Constant Innovation Creates Radically Successful Businesses "
                             price = {11.96}
                             rating = {5}
                             image = "/images/lean startup img1.jpg"     
@@ -23,7 +23,7 @@ const Home = () =>
                     {
                     <Product 
                         id= "222222"
-                        title = "devvvvvvvvvvvvvvv"
+                        title = "SanDisk Ultra Dual SDDD3-128G-I35 USB 3.0 128GB Flash Drive (Dual Micro-USB and USB 3.0 connectors)"
                         price = {12.00}
                         rating = {1}
                         image = "/images/sandisk img.jpg"   
@@ -39,7 +39,7 @@ const Home = () =>
                         {
                         <Product 
                             id= "9999999999"
-                            title = "kkkkkkkkkkkkkkkke"
+                            title = "ADISA Laptop Backpack 31 Ltrs"
                             price = {13.96}
                             rating = {99}
                             image = "/images/BAGPACK.jpg"                
@@ -53,7 +53,7 @@ const Home = () =>
                     {
                     <Product 
                         id= "8888888"
-                        title = "mevvvvvvvvvvvvvvv"
+                        title = "Canon EOS 200D II 24.1MP Digital SLR Camera + EF-S 18-55mm f4 is STM Lens (Black) + Arctic Fox Sling Shutter Topography"
                         price = {14.00}
                         rating = {88}
                         image = "/images/canonimg 1.jpg"       
@@ -65,7 +65,7 @@ const Home = () =>
                     {
                     <Product 
                         id= "777777777"
-                        title = "sevvvvvvvvvvvv"
+                        title = "Men's Mesh Lace-Ups Running/Walking/Gym/Sports Fashion Shoes"
                         price = {14.00}
                         rating = {77}
                         image = "/images/SHOES IMG 1.jpg"        

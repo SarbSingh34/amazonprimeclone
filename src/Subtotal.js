@@ -15,7 +15,7 @@ const Subtotal = () =>
           renderText={(value) =>
         (
             <>
-            <p>
+            <p style = {{fontSize:'15px',fontWeight:'800'}}>
                  Subtotal ({basket.length} items) :{`${value}`}
             </p>
             </>
@@ -26,7 +26,7 @@ const Subtotal = () =>
             thousandSeparator = {true}
             prefix = {"$"}/>
       </div>
-       <button> Proceed to Checkout </button>
+       <button  style = {{padding:'3px',fontWeight:'800'}}> Proceed to Checkout </button>
       </>
   )
 };

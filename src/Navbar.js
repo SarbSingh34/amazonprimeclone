@@ -51,50 +51,51 @@ const Navbar = () =>
       </div>
            <div className="side_content"
             style={{
-            width: "20%",
+            width: "36%",
              display: "flex",
              justifyContent: "space-evenly",
-             padding:'3px'
+             padding:'12px'
              }}>
-              
-                  <Link to = {!user  && '/Login'} style = {{textDecoration:'none'}} >
-                  <div
-                      className="header_option" onClick={handleAuthentication}
-                      style={{  flexDirection: "column", color: "white",fontSize:'20px' }} >
-                      <span className = "firstline"   > Hello </span>
-                      <span className = "secondline" > {user ? 'Sign Out' : 'Sign In'}</span>
-                  </div>
+
+              <span> 
+                 <Link to = {!user  && '/Login'} style = {{textDecoration:'none'}} >
+                    <div className="header_option" onClick={handleAuthentication}
+                        style={{  flexDirection: "column", color: "white",fontSize:'20px' }} >
+                        <span className = "firstline"   > Hello </span>
+                        <span className = "secondline" > {user ? 'Sign Out' : 'Sign In'}</span>
+                    </div>
                   </Link>
+              </span>
 
-                   <Link to="/" style = {{textDecoration:'none'}}>
-                   <div
-                       className="header_option"
-                       style={{  flexDirection: "column", color: "white" }}
-                   >
-                       <span className = "firstline" style = {{fontSize:'12px'}}> Returns </span>
-                       <span className = "secondline" style = {{fontSize:'19px',fontWeight:'500'}}> & Orders </span>
-                   </div>
+                  <span>
+                  <Link to="/" style = {{textDecoration:'none'}}>
+                      <div className="header_option"
+                            style={{  flexDirection: "column", color: "white" }}>
+                          <span className = "firstline" style = {{fontSize:'19px'}}> Returns </span>
+                          <span className = "secondline" style = {{fontSize:'19px',fontWeight:'500'}}> & Orders </span>
+                      </div>
                    </Link>
-
+                    </span>
+                   
+                   <span> 
                    <Link to="/" style = {{textDecoration:'none'}}>
-                   <div
-                       className="header_option"
-                       style={{ display: "flex", flexDirection: "column", color: "white" }}
-                   >
-                       <span className = "firstline"> Your </span>
-                       <span className = "secondline"> Prime </span>
-                   </div>
+                      <div className="header_option"
+                            style={{ flexDirection: "column", color: "white" }}>
+                          <span className = "firstline"> Your </span>
+                          <span className = "secondline"> Prime </span>
+                      </div>
                    </Link>
+                   </span>
 
-                   <Link to="/Checkout" style = {{textDecoration:'none'}}>
-                   <div
-                       className="header_option"
-                       style={{ display: "flex", flexDirection: "row", color: "white",padding:'32%' }}
-                   >
-                       <span> <ShoppingBasketIcon /></span>
-                       <span className = "secondline">{basket.length} </span>
-                   </div>
-                   </Link> 
+                   <span> 
+                      <Link to="/Checkout" style = {{textDecoration:'none'}}>
+                        <div className="header_option"
+                            style={{ display: "flex", flexDirection: "row", color: "white",padding:'11%' }} >
+                            <span> <ShoppingBasketIcon /></span>
+                            <span className = "secondline">{basket.length} </span>
+                        </div>
+                      </Link>
+                   </span>
        </div>
         
     </div>

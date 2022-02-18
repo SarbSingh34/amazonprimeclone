@@ -26,11 +26,13 @@ const Product = ({id,title,image,price,rating}) =>
 
       <div className="card" style = {{display:'flex'}}>
           <img className="card-img-top" src= {image} alt="Card image cap" style = {{width:'42%',padding:'2%'}}/>
-            <div className="card-body">
-               <h5 className ="card-title" style = {{margin:'0%'}}> {title} </h5>
+            <div className="card-body" style = {{width:'50%'}}>
+               <h5 className ="card-title" style = {{margin:'0%',fontSize:'17px'}}> {title} </h5>
                <h5 className ="card-title" style = {{margin:'0%'}}> {price} </h5>
-               <h5 className ="card-title" style = {{margin:'0%'}}> {rating} </h5>
-               <button  class="btn btn-primary"  onClick={addtocart}> Add to Cart </button>
+               <h5 className ="card-title" style = {{margin:'0%',fontSize:'25px'}}> {rating} </h5>
+                  <div className="btn-main" style = {{textAlign:'center',padding:'5% 1%'}}>
+                      <button  class="btn btn-primary"  onClick={addtocart} style = {{fontSize:'initial'}}> Add to Cart </button>
+                  </div>
             </div>
       </div>
 

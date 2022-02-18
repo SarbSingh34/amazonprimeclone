@@ -26,7 +26,7 @@ const Home = () =>
                         title = "SanDisk Ultra Dual SDDD3-128G-I35 USB 3.0 128GB Flash Drive (Dual Micro-USB and USB 3.0 connectors)"
                         price = {12.00}
                         rating = "⭐⭐"
-                        image = "/images/sandisk img.jpg"    
+                        image = "/images/sandisk11-removebg-preview.png"    
                     />
                     }
                </div>   

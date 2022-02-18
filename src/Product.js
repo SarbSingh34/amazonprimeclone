@@ -24,13 +24,13 @@ const Product = ({id,title,image,price,rating}) =>
       <div className="product">
                  <div className="product-cover">
                       <div className="main-text">
-                         <p> {title} </p>
+                         <p style = {{fontSize:'22px',fontWeight:'600'}}> {title} </p>
                       </div>
                       <div className="price">
-                      <strong> {price} </strong>
+                      <strong> <span> Price: </span> {price} </strong>
                       </div>
                       <div className="rating">
-                             <strong> {rating} </strong>
+                             <strong> <span> Rating: </span> {rating} </strong>
                       </div>
                       <div className="image">
                          <img src = {image} style = {{width:'25%'}} />

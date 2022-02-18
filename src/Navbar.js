@@ -57,15 +57,14 @@ const Navbar = () =>
              padding:'3px'
              }}>
               
-                 <Link to = {!user  && '/Login'} style = {{textDecoration:'none'}} >
-                 <div
-                     className="header_option" onClick={handleAuthentication}
-                     style={{  flexDirection: "column", color: "white",fontSize:'20px' }}
-                 >
-                     <span className = "firstline"   > Hello </span>
-                     <span className = "secondline" > {user ? 'Sign Out' : 'Sign In'}</span>
-                 </div>
-                 </Link>
+                  <Link to = {!user  && '/Login'} style = {{textDecoration:'none'}} >
+                  <div
+                      className="header_option" onClick={handleAuthentication}
+                      style={{  flexDirection: "column", color: "white",fontSize:'20px' }} >
+                      <span className = "firstline"   > Hello </span>
+                      <span className = "secondline" > {user ? 'Sign Out' : 'Sign In'}</span>
+                  </div>
+                  </Link>
 
                    <Link to="/" style = {{textDecoration:'none'}}>
                    <div

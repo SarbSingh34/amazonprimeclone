@@ -23,19 +23,19 @@ const CheckoutProduct = ({id,title,image,price,rating}) =>
                                <img src = {image} alt = "" style = {{width:'60%'}}/>
                            </div>
                            <div className="second-product">
-                                    <p className = "checkoutproduct_title">
+                                    <p className = "checkoutproduct_title" style = {{fontSize:'x-large',fontWeight:'700'}}>
                                         {title}
                                     </p>
                                     <p className = "checkproduct_price">
                                         <strong> Price: </strong>
-                                        <small>$</small>
+                                        <strong>$</strong>
                                         <strong> {price} </strong>
                                     </p>
                                     <p className = "rating">
                                   
                                         <strong> {rating} </strong>
                                     </p>
-                                    <button onClick = {removefrombasket} style = {{padding:'1%'}} >
+                                    <button onClick = {removefrombasket} style = {{padding:'1%',fontWeight:'800'}} >
                                         Remove from Basket 
                                     </button>
                            </div>

@@ -42,7 +42,7 @@ const Home = () =>
                             title = "ADISA Laptop Backpack 31 Ltrs"
                             price = {13.96}
                             rating = "⭐⭐⭐⭐"
-                            image = "/images/BAGPACK.jpg"                
+                            image = "/images/bagpack-removebg-preview.png"                
 
                         />
                         }
@@ -56,7 +56,7 @@ const Home = () =>
                         title = "Canon EOS 200D II 24.1MP Digital SLR Camera + EF-S 18-55mm f4 is STM Lens (Black) + Arctic Fox Sling Shutter Topography"
                         price = {14.00}
                         rating = "⭐⭐⭐"
-                        image = "/images/canonimg 1.jpg"       
+                        image = "/images/canon_img-removebg-preview.png"       
                     />
                     }
                </div>   

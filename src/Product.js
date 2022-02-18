@@ -31,7 +31,7 @@ const Product = ({id,title,image,price,rating}) =>
                <h5 className ="card-title" style = {{margin:'0%'}}> {price} </h5>
                <h5 className ="card-title" style = {{margin:'0%',fontSize:'25px'}}> {rating} </h5>
                   <div className="btn-main" style = {{textAlign:'center',padding:'5% 1%'}}>
-                      <button  id = "btn-add" class="btn btn-primary"  onClick={addtocart} style = {{fontSize:'initial',border:'2px solid black'}}> Add to Cart </button>
+                      <button  id = "btn-add" class="btn btn-primary"  onClick={addtocart} style = {{fontSize:'initial',border:'2px solid black',cursor:"pointer"}}> Add to Cart </button>
                   </div>
             </div>
       </div>

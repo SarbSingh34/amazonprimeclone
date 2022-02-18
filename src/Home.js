@@ -13,7 +13,7 @@ const Home = () =>
                             title = "The Lean Startup: How Constant Innovation Creates Radically Successful Businesses "
                             price = {11.96}
                             rating = {5}
-                            image = "/images/lean startup img1.jpg"     
+                            image = "/images/lean startup img1.jpg"    
                         />
                         }
                     </div>
@@ -26,7 +26,7 @@ const Home = () =>
                         title = "SanDisk Ultra Dual SDDD3-128G-I35 USB 3.0 128GB Flash Drive (Dual Micro-USB and USB 3.0 connectors)"
                         price = {12.00}
                         rating = {1}
-                        image = "/images/sandisk img.jpg"   
+                        image = "/images/sandisk img.jpg"    
                     />
                     }
                </div>   

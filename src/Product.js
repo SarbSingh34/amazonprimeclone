@@ -22,23 +22,43 @@ const Product = ({id,title,image,price,rating}) =>
   return (
   <>
       <div className="product">
-                 <div className="product-cover">
-                      <div className="main-text">
-                         <p style = {{fontSize:'22px',fontWeight:'600'}}> {title} </p>
-                      </div>
-                      <div className="price">
-                      <strong> <span> Price: </span> {price} </strong>
-                      </div>
-                      <div className="rating">
-                             <strong> <span> Rating: </span> {rating} </strong>
-                      </div>
+
+
+      <div className="card" style = {{display:'flex'}}>
+          <img className="card-img-top" src= {image} alt="Card image cap" style = {{width:'42%',padding:'2%'}}/>
+            <div className="card-body">
+               <h5 className ="card-title" style = {{margin:'0%'}}> {title} </h5>
+               <h5 className ="card-title" style = {{margin:'0%'}}> {price} </h5>
+               <h5 className ="card-title" style = {{margin:'0%'}}> {rating} </h5>
+               <button  class="btn btn-primary"  onClick={addtocart}> Add to Cart </button>
+            </div>
+      </div>
+
+
+                 {/* <div className="product-cover" style = {{display:'flex'}}>
+                    <div className="first-part" style = {{padding:'5%'}}>
                       <div className="image">
-                         <img src = {image} style = {{width:'25%'}} />
+                         <img src = {image} style = {{width:'100%',height:'100%'}} />
                       </div>
-                      <div className="cart-btn">
-                          <button onClick={addtocart}> Add to Cart </button>
+                    </div>
+                     <div className="second-part">
+                           <div className="main-text">
+                              <p style = {{fontSize:'22px',fontWeight:'600'}}> {title} </p>
+                           </div>
+                           <div className="price">
+                           <strong> <span> Price: </span> {price} </strong>
+                           </div>
+                           <div className="rating">
+                                 <strong> <span> Rating: </span> {rating} </strong>
+                           </div>
+                           <div className="cart-btn">
+                              <button onClick={addtocart}> Add to Cart </button>
                       </div>
-                 </div> 
+                     </div>
+                 </div>  */}
+
+
+                 
       </div>
   </>
   )
